@@ -32,17 +32,17 @@
             <div class="advantages__list">
                 <div class="icon-block">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/color_lens.svg" alt="Image" class="icon" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/color_lens.svg" alt="Image" class="icon" />
                     <div class="text">Яркие насыщенные цвета</div>
                 </div>
                 <div class="icon-block">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/stars.svg" alt="Image" class="icon" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/stars.svg" alt="Image" class="icon" />
                     <div class="text">Кристальная четкость изображения</div>
                 </div>
                 <div class="icon-block">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/motion.svg" alt="Image" class="icon" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/motion.svg" alt="Image" class="icon" />
                     <div class="text">Быстрые движения и плавный геймплей</div>
                 </div>
             </div>

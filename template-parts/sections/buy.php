@@ -14,17 +14,17 @@
             <div class="buy__list">
 
                 <div class="icon-block">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/disk.svg" alt="Image" class="icon" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/disk.svg" alt="Image" class="icon" />
                     <div class="text"><?php echo esc_html(get_theme_mod('buy_item_1', 'Футляр с игровыми дисками')); ?></div>
                 </div>
 
                 <div class="icon-block">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/wysiwyg.svg" alt="Image" class="icon" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/wysiwyg.svg" alt="Image" class="icon" />
                     <div class="text"><?php echo esc_html(get_theme_mod('buy_item_2', 'Футляр с кодом для загрузки игры и дисками (pc)')); ?></div>
                 </div>
 
                 <div class="icon-block">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/collections.svg" alt="Image" class="icon" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/collections.svg" alt="Image" class="icon" />
                     <div class="text"><?php echo esc_html(get_theme_mod('buy_item_3', 'Справочник с информацией об игровом мире')); ?></div>
                 </div>
             </div>

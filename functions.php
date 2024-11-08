@@ -46,8 +46,8 @@ add_action('init', 'cyberpunk_custom_post_types');
 // Function to add meta tags
 function cyberpunk_add_meta_tags()
 {
-  echo '<meta name="format-detection" content="telephone=no" />';
-  echo '<meta name="keywords" content="Cyberpunk, игры, консоли, игровой мир" />';
+  echo '<meta name="TEST" content="FROM FUNCTIONS" >';
+  echo '<meta name="keywords" content="Cyberpunk, игры, консоли, игровой мир">';
 }
 add_action('wp_head', 'cyberpunk_add_meta_tags');
 
