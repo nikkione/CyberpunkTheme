@@ -1,0 +1,275 @@
+@use "./base/variables" as *;
+
+.action {
+	height: 100%;
+	padding-bottom: 140px;
+	background-color: $dark-color;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -69px;
+		left: 0;
+		right: 0;
+		height: 70px;
+		background-image: url("../images/black_line.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.grid {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 55px;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 32px;
+			row-gap: 98px;
+			margin-top: 15px;
+		}
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			grid-template-columns: 3fr 5fr;
+			column-gap: 32px;
+			row-gap: 25px;
+		}
+	}
+
+	&__promo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			justify-content: start;
+		}
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			grid-column: span 2 / span 2;
+		}
+
+		p {
+			color: $light-color;
+			line-height: 34px;
+			max-width: 952px;
+			text-align: left;
+		}
+	}
+
+	&__promotion {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-bottom: 25px;
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			flex-direction: row;
+			align-items: center;
+			gap: 32px;
+		}
+
+		.title {
+			color: $light-color;
+		}
+
+		.promo {
+			display: none;
+
+			@media screen and (min-width: $breakpoint-tablet) {
+				display: block;
+			}
+		}
+	}
+
+	&__form {
+		margin-top: 50px;
+		width: 100%;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			max-width: 460px;
+			grid-row-start: 2;
+			margin-top: 0;
+		}
+	}
+
+	.form-group {
+		margin-bottom: 35px;
+
+		input {
+			width: 100%;
+			padding-bottom: 13px;
+			border: none;
+			background: transparent;
+			color: $light-color;
+			border-bottom: 1px solid $text-color;
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: 300;
+
+			&:hover {
+				border-color: $accent-color;
+			}
+
+			@media screen and (min-width: $breakpoint-tablet) {
+				font-size: 18px;
+				line-height: 21px;
+			}
+
+			&::placeholder {
+				color: $light-color;
+			}
+		}
+	}
+
+	.file-upload {
+		position: relative;
+		padding: 39px 20px;
+		text-align: center;
+		color: $light-color;
+		cursor: pointer;
+		margin-bottom: 35px;
+		background-color: #000000;
+		border: 2px dashed $text-color;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 300;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 7px;
+		transition: all 0.5s ease;
+
+		&:hover {
+			border-color: $accent-color;
+		}
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			font-size: 18px;
+			line-height: 21px;
+		}
+
+		.text {
+			text-decoration: underline;
+		}
+
+		.formats {
+			display: none;
+
+			@media screen and (min-width: $breakpoint-desktop) {
+				display: block;
+			}
+		}
+	}
+
+	.submit-btn {
+		background: $accent-color;
+		color: $dark-color;
+		border-color: $accent-color;
+		font-weight: 700;
+		cursor: pointer;
+
+		&:hover {
+			color: $accent-color;
+			background: $dark-color;
+		}
+	}
+
+	.consent {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 14px;
+		color: $light-color;
+		margin-top: 15px;
+
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		label {
+			font-size: 12px;
+			line-height: 14px;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.checkbox-icon {
+			width: 18px;
+			height: 18px;
+			background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='13' height='13' stroke='%23777777'/%3E%3C/svg%3E%0A");
+			background-size: cover;
+			display: inline-block;
+			margin-right: 8px;
+			position: relative;
+		}
+
+		input[type="checkbox"]:checked + label .checkbox-icon {
+			background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='13' height='13' stroke='%23777777'/%3E%3Cpath d='M10.9498 4.08233L6.00002 9.03208L3.17159 6.20365' stroke='%23F8F200'/%3E%3C/svg%3E ");
+		}
+	}
+
+	.wpcf7 form .wpcf7-response-output {
+		color: white;
+		font-size: 13px;
+	}
+
+	.images-section {
+		display: flex;
+		flex-direction: row;
+		grid-row-start: 1;
+		gap: 32px;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			flex-direction: column;
+			grid-row: span 2 / span 2;
+			gap: 0;
+			margin-top: 80px;
+		}
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			flex-direction: row;
+			grid-row: span 1 / span 1;
+		}
+
+		.image {
+			width: 100%;
+			height: 100%;
+		}
+
+		.promo-mob {
+			position: absolute;
+			display: block;
+			top: 5px;
+			left: 13px;
+
+			@media screen and (min-width: $breakpoint-tablet) {
+				display: none;
+			}
+		}
+
+		.image-group {
+			display: none;
+			@media screen and (min-width: $breakpoint-desktop) {
+				display: block;
+			}
+		}
+
+		.playstation,
+		.xbox {
+			display: block;
+			@media screen and (min-width: $breakpoint-desktop) {
+				display: none;
+			}
+		}
+	}
+
+	.images-section img {
+		width: 100%;
+		height: auto;
+	}
+}

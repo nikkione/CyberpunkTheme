@@ -1,0 +1,62 @@
+@use "./base/variables" as *;
+
+.header {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	max-height: 74px;
+	width: 100%;
+	z-index: 10;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		gap: 10px;
+		height: 100%;
+
+		@media screen and (min-width: 600px) {
+			flex-direction: row;
+		}
+	}
+
+	.logo {
+		width: 200px;
+		height: auto;
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			width: 296px;
+		}
+	}
+
+	&__social-icons {
+		display: flex;
+		gap: 28px;
+		height: 25px;
+
+		.icon img {
+			width: 25px;
+			height: 25px;
+			transition: all 0.5s ease;
+
+			&:hover {
+				scale: 1.2;
+			}
+		}
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			gap: 30px;
+			height: 30px;
+
+			.icon img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

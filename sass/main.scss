@@ -1,0 +1,14 @@
+@use "base/variables" as *;
+@use "base/fonts";
+@use "base/reset";
+@use "base/global";
+
+@use "layout/header";
+
+@use "sections/hero";
+@use "sections/about";
+@use "sections/action";
+@use "sections/advantages";
+@use "sections/buy";
+
+@use "layout/footer";

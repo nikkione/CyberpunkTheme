@@ -1,0 +1,94 @@
+@use "./base/variables" as *;
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__top {
+		width: 100%;
+		background-color: $light-color;
+		color: $dark-color;
+		display: flex;
+		flex-direction: column;
+		padding-top: 40px;
+		align-items: center;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			flex-direction: row;
+			justify-content: space-between;
+			padding-top: 13px;
+			padding-bottom: 13px;
+		}
+	}
+
+	&__logo {
+		color: $dark-color;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 25px;
+		padding-bottom: 25px;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			flex-direction: row;
+			gap: 32px;
+			padding-bottom: 0;
+		}
+
+		img {
+			width: auto;
+			max-height: 50px;
+			height: 100%;
+			@media screen and (min-width: $breakpoint-desktop) {
+				max-height: 74px;
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+		padding: 25px 0;
+		background-color: #e6e6e6;
+		margin: 0 -12px;
+		width: calc(100% + 24px);
+
+		a {
+			color: $dark-color;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			flex-direction: row;
+			justify-content: end;
+			gap: 32px;
+			padding: 0;
+			margin: 0;
+			background-color: $light-color;
+
+			a {
+				color: $dark-color;
+				font-size: 18px;
+			}
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		background-color: $dark-color;
+		color: $light-color;
+		font-size: 12px;
+		padding: 13px 0;
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			margin: 0;
+		}
+	}
+}
