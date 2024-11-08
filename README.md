@@ -11,7 +11,7 @@ CyberpunkTheme — это кастомная тема WordPress, созданн�
 ## Ссылки
 
 - **Демо-сайт**: [Перейти на сайт](http://cyberpunk.opnmnds.beget.tech/)
-- **Репозиторий плагина**: [WordPress Плагин](https://github.com/your-username/plugin-repo)
+- **Репозиторий плагина**: [WordPress Плагин](https://github.com/nikkione/CyberpunkPlugin)
 
 ## Установка и настройка
 
